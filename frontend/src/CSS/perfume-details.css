@@ -1,0 +1,124 @@
+.main2 {
+    background-color: #FFEBEE; /* Light pink background for the body */
+    color: #4B0082; /* Dark violet for general text for better contrast */
+}
+
+.name {
+    text-align: center;
+    color: #C2185B; /* Medium pink for the name */
+    margin-top: 0;
+    padding-top: 3%;
+}
+
+.format {
+    display: flex;
+    width: 70%;                /* Set the width you need */
+    justify-content: center;    /* Centers content along the vertical axis */
+    align-items: center;        /* Centers content along the horizontal axis */
+    margin: 0 auto;            
+    padding: 20px;              /* Optional: Add padding for inner spacing */
+    background-color: white;    /* White background for the format */
+    border-radius: 10px;        /* Rounded corners for a softer look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.image {
+    padding: 5%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.imput {
+    display: flex;
+}
+
+form input,
+form textarea,
+form select {
+    height: 5vh;
+    width: 50vh;
+    padding-right: 2%;
+    margin: 2%;
+    border: 1px solid #F06292; /* Light pink border for inputs */
+    border-radius: 5px;        /* Rounded corners */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #EC407A; /* Pink for buttons */
+    color: white;               /* White text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+form button:hover {
+    background-color: #D81B60;  /* Darker pink on hover */
+}
+
+.tapo {
+    margin-left: 10%;
+}
+
+.review-table {
+    width: 80%;                     /* Set to 80% width for larger screens */
+    max-width: 800px;               /* Limit maximum width for larger screens */
+    border-collapse: collapse;       /* Collapse borders */
+    margin-top: 20px;                /* Margin at the top */
+    margin: 0 auto;                  /* Center the table */
+    overflow-x: auto;                /* Enable horizontal scrolling on smaller screens */
+}
+
+.review-table th,
+.review-table td {
+    border: 1px solid #F06292;          /* Light pink border */
+    padding: 10px;                       /* Padding for cells */
+    text-align: left;                    /* Left-align text */
+    color: #4B0082;                      /* Dark violet for table text */
+}
+
+.review-table th {
+    background-color: #FFCDD2;           /* Light pink background for header */
+    font-weight: bold;                    /* Bold text for headers */
+}
+
+.review-table tr:nth-child(even) {
+    background-color: #FFEFF1;           /* Very light pink background for even rows */
+}
+
+.review-table tr:hover {
+    background-color: #FFABAB;           /* Background color on hover */
+}
+
+/* Responsive styles for the table */
+@media (max-width: 600px) {
+    .review-table {
+        width: 100%;                     /* Full width on smaller screens */
+    }
+
+    .review-table th,
+    .review-table td {
+        font-size: 0.9rem;               /* Slightly smaller font size for better readability */
+        padding: 8px;                    /* Reduced padding for smaller screens */
+        text-align: center;              /* Center-align text for better presentation */
+    }
+
+    .format {
+        flex-direction: column;          /* Stack elements in a column on smaller screens */
+    }
+
+    .imput {
+        flex-direction: column;          /* Stack input elements */
+        align-items: center;             /* Center align input elements */
+    }
+
+    .content {
+        text-align: center;              /* Center text content */
+    }
+}

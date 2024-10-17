@@ -1,0 +1,10 @@
+.share-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px;       /* Margin for spacing */
+}
+
+.share-buttons svg {
+    cursor: pointer;         /* Change cursor to pointer */
+    margin: 0 10px;         /* Space out the icons */
+}

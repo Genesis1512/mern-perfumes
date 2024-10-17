@@ -1,0 +1,91 @@
+/* src/perfumeList.css */
+.perfume-list-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.perfume-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.perfume-card img {
+    width: 100%;
+    height: auto;
+}
+
+.view-details {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: lightpink;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-details:hover {
+    background-color: pink;
+}
+
+.image
+{
+    height: 200px;
+    width:200px;
+}
+.perfume-list-container {
+    text-align: center; /* Center-align the title */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the card container */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the container */
+}
+
+.perfume-card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #F06292; /* Light pink border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px; /* Padding inside the card */
+    width: 200px; /* Set a fixed width for the cards */
+}
+
+.perfume-card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.perfume-card img {
+    max-width: 100%; /* Ensure the image fits within the card */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.view-details {
+    display: inline-block; /* Make the link a block element for padding */
+    margin-top: 10px; /* Space above the link */
+    padding: 10px; /* Padding for the link */
+    background-color: #EC407A; /* Pink background for the link */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.view-details:hover {
+    background-color: #D81B60; /* Darker pink on hover */
+}

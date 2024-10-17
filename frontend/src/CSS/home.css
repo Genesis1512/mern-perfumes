@@ -1,0 +1,84 @@
+.top {
+    background-image: url('../images/Background 1.jpeg'); /* Path to your image */
+    height: 100vh;               /* Full height of the viewport */
+    background-size: cover;       /* Cover the entire area */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;               /* Keep padding fixed */
+   
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;                /* Adjust width relative to the screen size */
+    max-width: 1200px;         /* Max width, no reduction in padding/margin */
+    text-align: center;
+    flex-wrap: wrap;           /* Allow wrapping to adapt on smaller screens */
+}
+
+.tagline {
+    flex: 1;
+    color: rgb(237, 129, 185);
+    padding-right: 0;        /* Keep spacing fixed */
+    text-align: center;           /* Default text-align on larger screens */
+}
+
+.tagline h1 {
+    font-size: 3.5rem;          /* Keep font size fixed */
+    font-weight: bold;
+}
+
+.tagline p {
+    font-size: 1.25rem;         /* Keep font size fixed */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.perfume-image {
+    width: 100%;            /* Scale image within its container */
+    height: auto;
+}
+
+/* Media Query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;  /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* .image-container {
+        display: none;
+        
+    } */
+     .perfume-image
+     {
+        height:42vw;
+     }
+    
+    .tagline {
+        padding-right: 0;        /* Center-align the text */
+        text-align: center;
+            /* Center-align the text */
+    }
+
+    .tagline h1,
+    .tagline p {
+        /* Font sizes remain unchanged */
+        font-size: 2rem;      /* Ensure fonts don't change */
+    }
+
+}

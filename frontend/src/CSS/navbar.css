@@ -1,0 +1,38 @@
+/* .main
+{ 
+    height : 80px;
+}
+.image2
+{
+    height: 150px;
+    width: 300px;
+    margin-left: 20px;
+} */
+
+
+.main {
+    height: 80px;
+    display: flex;
+    justify-content: flex-start; /* Logo starts aligned to the left */
+    align-items: center;
+    padding: 0 20px; /* Padding for spacing */
+}
+
+.image2 {
+    height: 150px;
+    width: 300px;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out; /* Smooth transition on resize */
+}
+
+/* Media Query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .main {
+        justify-content: center; /* Center align the logo */
+    }
+
+    .image2 {
+          /* Adjust width to maintain proportions */
+        margin-left: 0;  /* Remove left margin for centering */
+    }
+}
