@@ -88,5 +88,5 @@ Install npm of Backend and Frontend
 In this project, CORS (Cross-Origin Resource Sharing) is used to enable secure communication between the backend and frontend, as they are hosted on different origins (URLs). By configuring CORS, we allow the frontend to make HTTP requests to the backend API without encountering cross-origin restrictions. 
 
 ```http
-  const cors = require('cors');
+  const cors = require('cors')
 ```
